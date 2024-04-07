@@ -59,7 +59,7 @@ export default function Home() {
       <h3 className="mt-14 pb-5 scroll-m-20 text-3xl font-bold tracking-tight mr-auto">
         Features
       </h3>
-      <section className="grid grid-cols-2 gap-8">
+      <section className="grid md:grid-cols-2 gap-8 px-3 md:px-0">
         <FeatureCard title="Podcast search and discovery" isWIP>
           Find the perfect podcast instantly with powerful search across
           directories, advanced filtering options, and detailed episode
@@ -82,7 +82,7 @@ export default function Home() {
       <h3 className="mt-24 mb-3 scroll-m-20 text-3xl font-bold tracking-tight mr-auto">
         Testimonials
       </h3>
-      <section className="grid grid-cols-2 gap-4 w-full">
+      <section className="grid md:grid-cols-2 gap-4 w-full px-3 md:px-0">
         <TestimonialCard author="John Doe">
           This app changed how I listen to podcasts! It&apos;s easy to use, has great
           search, and the customizable controls are perfect. Highly recommended!
