@@ -1,33 +1,76 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  @layer base {
+    :root {
+      --background: 148, 72%, 95%; /* Light mint green background */
+      --foreground: 0, 0%, 20%; /* Dark text color */
+    
+      --card: 148, 72%, 90%; /* Slightly darker mint green for cards */
+      --card-foreground: 0, 0%, 0%; /* Black text on cards */
+    
+      --popover: 148, 72%, 95%; /* Light mint green for popovers */
+      --popover-foreground: 0, 0%, 20%; /* Dark text on popovers */
+    
+      --primary: 148, 72%, 40%; /* Darker mint green for primary elements */
+      --primary-foreground: 0, 0%, 100%; /* White text on primary elements */
+    
+      --secondary: 210, 18%, 70%; /* Greyish blue for secondary elements */
+      --secondary-foreground: 0, 0%, 0%; /* Black text on secondary elements */
+    
+      --muted: 210, 18%, 80%; /* Light greyish blue for muted elements */
+      --muted-foreground: 0, 0%, 40%; /* Dark grey text on muted elements */
+    
+      --accent: 148, 72%, 60%; /* Mint green accent color */
+      --accent-foreground: 0, 0%, 0%; /* Black text on accent elements */
+    
+      --destructive: 0, 72%, 50%; /* Red for destructive actions */
+      --destructive-foreground: 0, 0%, 100%; /* White text on destructive elements */
+    
+      --border: 210, 18%, 90%; /* Light greyish blue for borders */
+      --input: 210, 18%, 95%; /* Very light greyish blue for inputs */
+      --ring: 148, 72%, 60%; /* Mint green for focus rings */
+    
+      --radius: 0.5rem; /* Rounded corners */
+    }
+    
+    .dark {
+      --background: 156, 28%, 20%; /* Dark green background */
+      --foreground: 0, 0%, 100%; /* White text color */
+    
+      --card: 156, 28%, 25%; /* Slightly lighter dark green for cards */
+      --card-foreground: 0, 0%, 100%; /* White text on cards */
+    
+      --popover: 156, 28%, 20%; /* Dark green for popovers */
+      --popover-foreground: 0, 0%, 100%; /* White text on popovers */
+    
+      --primary: 148, 72%, 40%; /* Darker mint green for primary elements */
+      --primary-foreground: 0, 0%, 100%; /* White text on primary elements */
+    
+      --secondary: 200, 28%, 30%; /* Dark greyish blue for secondary elements */
+      --secondary-foreground: 0, 0%, 100%; /* White text on secondary elements */
+    
+      --muted: 200, 28%, 40%; /* Greyish blue for muted elements */
+      --muted-foreground: 0, 0%, 80%; /* Light grey text on muted elements */
+    
+      --accent: 148, 72%, 60%; /* Mint green accent color */
+      --accent-foreground: 0, 0%, 100%; /* White text on accent elements */
+    
+      --destructive: 0, 72%, 50%; /* Red for destructive actions */
+      --destructive-foreground: 0, 0%, 100%; /* White text on destructive elements */
+    
+      --border: 200, 28%, 30%; /* Dark greyish blue for borders */
+      --input: 200, 28%, 25%; /* Dark greyish blue for inputs */
+      --ring: 148, 72%, 60%; /* Mint green for focus rings */
+    }    
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
   }
-}
