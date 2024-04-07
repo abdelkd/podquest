@@ -56,7 +56,7 @@ export default function Home() {
         </h2>
         <Button className="mt-10 hover:bg-accent">Start Listening Now</Button>
       </section>
-      <h3 className="mt-14 pb-5 scroll-m-20 text-3xl font-bold tracking-tight mr-auto">
+      <h3 className="pl-3 md:pl-0 mt-14 pb-5 scroll-m-20 text-3xl font-bold tracking-tight mr-auto">
         Features
       </h3>
       <section className="grid md:grid-cols-2 gap-8 px-3 md:px-0">
@@ -79,7 +79,7 @@ export default function Home() {
           experience on mobile devices.
         </FeatureCard>
       </section>
-      <h3 className="mt-24 mb-3 scroll-m-20 text-3xl font-bold tracking-tight mr-auto">
+      <h3 className="pl-3 md:pl-0 mt-24 mb-3 scroll-m-20 text-3xl font-bold tracking-tight mr-auto">
         Testimonials
       </h3>
       <section className="grid md:grid-cols-2 gap-4 w-full px-3 md:px-0">
