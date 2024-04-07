@@ -84,13 +84,13 @@ export default function Home() {
       </h3>
       <section className="grid grid-cols-2 gap-4 w-full">
         <TestimonialCard author="John Doe">
-          This app changed how I listen to podcasts! It's easy to use, has great
+          This app changed how I listen to podcasts! It&apos;s easy to use, has great
           search, and the customizable controls are perfect. Highly recommended!
         </TestimonialCard>
         <TestimonialCard author="Jane Doe">
           This app is perfect for my commute! I love switching devices without
           losing my place. The recommendations are amazing, and the transcripts
-          make podcasts so much more accessible. It's really elevated my
+          make podcasts so much more accessible. It&apos;s really elevated my
           listening.
         </TestimonialCard>
       </section>
