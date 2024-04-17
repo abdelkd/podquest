@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      gridTemplateColumns: {
+        'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))'
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
