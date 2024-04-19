@@ -12,8 +12,7 @@ const createLink = (href: string, label: string): Link => {
 }
 
 export const links: Link[] = [
-    createLink('/hub', 'Home'),
+    createLink('/hub', 'Browse'),
     createLink('/queue', 'Queue'),
-    createLink('/browse', 'Browse'),
     createLink('/subsciptions', 'Subscriptions'),
 ]
