@@ -55,3 +55,19 @@ export const getPodcasts = async ({ count = 50 }: GetPodcasts): Promise<APIRespo
 
     return json.data
 }
+
+export const getPodcastInfo = async ({ id }: { id: string }) => {
+    const response = await fetch(`${endpoint}/podcast?podcast_id=${id}`).then(r => r.json())
+    const data = response.data
+    console.log(data)
+
+    return data
+}
+
+export const getEpisodes = async ({id, ep_count = 50}: {id: string, ep_count: number}) => {
+    const response = await fetch(`${endpoint}/podcast/episodes?podcast_id=${id}&count=${ep_count}`).then(r => r.json())
+    const data = response.data
+    console.log(data.episodes[0])
+
+    return data
+}
