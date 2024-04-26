@@ -48,10 +48,10 @@ type APIResponse = {
 interface GetPodcasts {
     count?: number
 }
-export const getPodcasts = async ({ count = 50 }: GetPodcasts) => {
+export const getPodcasts = async ({ count = 50 }: GetPodcasts): Promise<APIResponse['data']> => {
     noStore()
     const res = await fetch(`${endpoint}/podcasts?count=10`, {cache: 'no-store'})
-    const json = await res.json() as APIResponse
+    const json = await res.json()
 
     return json.data
 }
